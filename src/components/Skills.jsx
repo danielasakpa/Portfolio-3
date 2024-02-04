@@ -43,7 +43,7 @@ const shuffle = (array) => {
   let currentIndex = array.length,
     randomIndex;
 
-  while (currentIndex != 0) {
+  while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
@@ -76,8 +76,6 @@ const generateSquares = () => {
 const Skills = () => {
   const timeoutRef = useRef(null);
   const [squares, setSquares] = useState(generateSquares());
-
-  const isMobile = window.innerWidth <= 768;
 
   const ref = useRef(null);
 

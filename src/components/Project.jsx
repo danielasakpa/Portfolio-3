@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
 import { VscLinkExternal } from "react-icons/vsc";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { motion as m, useInView } from "framer-motion";

@@ -2,7 +2,6 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { VscLinkExternal } from "react-icons/vsc";
-import { IoIosClose } from "react-icons/io";
 
 const CardModal = ({ isOpen, setIsOpen }) => {
   return (
