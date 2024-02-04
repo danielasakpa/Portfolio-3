@@ -1,9 +1,52 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { toast } from "react-toastify";
+import sendEmail from "../utils/email";
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [emailSent, setEmailSent] = useState("");
+
+  useEffect(() => {
+    if (!emailSent) {
+      return;
+    }
+
+    if (emailSent === "OK") {
+      toast.success("Message sent ✅");
+    }
+
+    if (emailSent !== "OK" && emailSent !== "loading") {
+      toast.error("Error sending message ❌");
+    }
+  }, [emailSent]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
+
+    console.log("Form data:", formData);
+
+    sendEmail(formData, setEmailSent);
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
@@ -19,6 +62,8 @@ const ContactForm = () => {
             name="name"
             placeholder="Your Name *"
             className="w-full p-3 bg-button1 border border-opacity-[20%] border-accent rounded focus:outline-none focus:border-indigo-500"
+            value={formData.name}
+            onChange={handleChange}
             required
           />
         </div>
@@ -32,6 +77,8 @@ const ContactForm = () => {
             name="email"
             placeholder="Your Email *"
             className="w-full p-3 bg-button1 border border-opacity-[20%] border-accent rounded focus:outline-none focus:border-indigo-500"
+            value={formData.email}
+            onChange={handleChange}
             required
           />
         </div>
@@ -46,6 +93,8 @@ const ContactForm = () => {
           name="subject"
           placeholder="Subject *"
           className="w-full p-3 bg-button1 border border-opacity-[20%] border-accent rounded focus:outline-none focus:border-indigo-500"
+          value={formData.subject}
+          onChange={handleChange}
           required
         />
       </div>
@@ -59,6 +108,8 @@ const ContactForm = () => {
           rows="4"
           placeholder="Your Message *"
           className="w-full p-3 bg-button1 border border-opacity-[20%] border-accent rounded resize-none focus:outline-none focus:border-indigo-500"
+          value={formData.message}
+          onChange={handleChange}
           required
         ></textarea>
       </div>

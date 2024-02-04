@@ -82,7 +82,7 @@ const Skills = () => {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    amount: 0.2,
+    amount: 0.1,
     once: true,
   });
 
@@ -103,13 +103,13 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="relative px-6 py-10 mx-auto mt-5 xl:w-5/6 text-text lg:px-[5%] xl:px-0"
+      className="relative px-6 py-10 mx-auto mt-5 xl:w-5/6 text-text md:px-[5%] xl:px-0"
     >
       <m.div
         ref={ref}
         initial={{ opacity: 0, x: -70 }}
         whileInView={isInView && { opacity: 1, x: 0 }}
-        transition={{ ease: easing, duration: 0.6, delay: 0.2 }}
+        transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
         viewport={{ once: true }}
       >
         <span className="block text-[35px] hover-grow-animation">

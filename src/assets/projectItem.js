@@ -1,30 +1,47 @@
 export const projectItem = [
     {
-        imageUrl: require('../assets/images/Manga-app.png'),
+        imageUrl: require("../assets/images/Manga-app.png"),
         id: "1288213e21nhfd8912e12",
         projectNum: "Manga App",
         description: `Introducing YUKI MANGA – your ultimate destination for immersive manga exploration! This cutting-edge Manga App, developed with React, Tailwind CSS, MangaDex API, Node.js, Express.js, and MongoDB, offers a seamless and visually captivating experience for manga enthusiasts. Dive into a vast collection, customize your search, and enjoy an unparalleled reading journey. Experience YUKI MANGA now at Live Site and explore the inner workings on GitHub. Embark on a manga adventure like never before!`,
         liveSite: "https://manga-website1.netlify.app/",
         github: "https://github.com/danielasakpa/Manga_Website",
-        techs: ["React", "Tailwind CSS", "MangaDex Api", "JavaScript", "Node JS", "Express js", "MongoDB", "Git",]
+        techs: [
+            "React",
+            "Tailwind CSS",
+            "MangaDex Api",
+            "JavaScript",
+            "Node JS",
+            "Express js",
+            "MongoDB",
+            "Git",
+        ],
     },
     {
-        imageUrl: require('../assets/images/portfolio-3.png'),
+        imageUrl: require("../assets/images/portfolio-3.png"),
         id: "1288213e2189tudvfdvtrwrgrgf12e12",
         projectNum: "My New portfolio",
         description: `Explore my digital realm—a dynamic portfolio showcasing the fusion of creativity and technology. Crafted with React.js for seamless interactivity and visually enhanced with Tailwind CSS for a modern aesthetic. Dive into a journey of captivating design, responsive layouts, and innovative animations. My portfolio is a testament to my passion for creating immersive digital experiences, underlined by a commitment to continuous learning and pushing the boundaries of web development`,
         liveSite: "https://danielasakpa.netlify.app/",
         github: "https://github.com/danielasakpa/Portfolio-3",
-        techs: ["React.js", "Framer Motion", "Tailwind CSS", "React Icons", "React Router", "Framer Motion",]
+        techs: [
+            "React.js",
+            "Framer Motion",
+            "Tailwind CSS",
+            "React Icons",
+            "React Router",
+            "Framer Motion",
+        ],
     },
     {
-        imageUrl: require('../assets/images/blog.png'),
+        imageUrl: require("../assets/images/blog.png"),
         id: "1288213e2189tudvfdvtrwegwewf12e12",
         projectNum: "Firebase Blog Site",
         description: `I designed and developed a dynamic blog website to share captivating stories and insightful content. Leveraging the power of React for the frontend, the site offers an interactive and seamless user experience. The blog data is managed using Firebase, providing real-time updates and secure authentication.`,
         liveSite: "https://gomycode-blog-website.netlify.app/",
         github: "https://github.com/danielasakpa/Portfolio-3",
-        techs: ["React",
+        techs: [
+            "React",
             "Firebase",
             "React Router",
             "Prism",
@@ -32,10 +49,11 @@ export const projectItem = [
             "API",
             "JavaScript",
             "Node.js",
-            "Git",]
+            "Git",
+        ],
     },
     {
-        imageUrl: require('../assets/images/realEstate.png'),
+        imageUrl: require("../assets/images/realEstate.png"),
         id: "1288213e218912gyue12",
         projectNum: "Real estate",
         description: `The purpose of this website was to create a platform for individuals to search for and view properties for sale or rent in their desired location. To begin, I utilized React to build the front end of the website, which 
@@ -44,10 +62,17 @@ export const projectItem = [
         real estate website project was a great learning experience, as it allowed me to utilize and improve my skills in React, Tailwind, and API integration. It was also satisfying to create a functional and user-friendly platform for individuals to search for and view properties.`,
         liveSite: "https://real-estate3.netlify.app/",
         github: "https://github.com/danielasakpa/Real-Estate",
-        techs: ["React", "React Router", "Tailwind CSS", "JavaScript", "Rapid API", "Git",]
+        techs: [
+            "React",
+            "React Router",
+            "Tailwind CSS",
+            "JavaScript",
+            "Rapid API",
+            "Git",
+        ],
     },
     {
-        imageUrl: require('../assets/images/portfolio.png'),
+        imageUrl: require("../assets/images/portfolio.png"),
         id: "1288213e2189tudvfdvtrf12e12",
         projectNum: "My personal portfolio",
         description: `My personal portfolio is a web application that showcases my skills and experience as a developer. It includes a homepage with a brief introduction and links to different sections of the portfolio, such as my projects, About, and contact information.
@@ -56,20 +81,27 @@ export const projectItem = [
         The overall goal of the portfolio is to provide a comprehensive and visually appealing showcase of my skills and experience as a developer. It is designed to be user-friendly and easy to navigate, with a clean and modern design.`,
         liveSite: "https://danielasakpa.netlify.app/",
         github: "https://github.com/danielasakpa/Portfolio-2",
-        techs: ["React", "React Router", "MUI", "JavaScript", "Git",
-        ]
+        techs: ["React", "React Router", "MUI", "JavaScript", "Git"],
     },
     {
-        imageUrl: require('../assets/images/Pizza.png'),
+        imageUrl: require("../assets/images/Pizza.png"),
         id: "1288213hijo1nhfd8912e12",
         projectNum: "Pizza Website",
         description: `This project aims to provide a convenient platform for users to browse and order Pizza. The website features a sleek and user-friendly interface that allows users to easily browse menus, place orders, and track the status of their deliveries. In addition to the user-facing features, the website will also have a back-end system for restaurant owners to manage their menus, orders, and delivery logistics. This will allow for seamless communication and coordination between the website and the restaurants.`,
         liveSite: "https://pizza-app3.netlify.app/",
         github: "https://github.com/danielasakpa/pizza-app",
-        techs: ["Next js", "CSS", "Node js", "Express js", "MongoDB", "Web Socket"]
+        techs: [
+            "Next js",
+            "CSS",
+            "Node js",
+            "Express js",
+            "MongoDB",
+            "Web Socket",
+            "JavaScript",
+        ],
     },
     {
-        imageUrl: require('../assets/images/fitnessApp.png'),
+        imageUrl: require("../assets/images/fitnessApp.png"),
         id: "12882133rd189tutrefgerfgf12e12",
         projectNum: "FitnessApp",
         description: `FitnessApp is a personal project that aims to provide users with a variety of workouts to choose from. Whether you're looking to improve your strength, cardio, or flexibility, FitnessApp has something for everyone.
@@ -77,10 +109,10 @@ export const projectItem = [
         Overall, FitnessApp is a comprehensive and user-friendly tool for anyone looking to improve their fitness and achieve their goals. Whether you're a seasoned athlete or just starting out on your fitness journey, FitnessApp has something for you`,
         liveSite: "https://exercise-app23.netlify.app/",
         github: "https://github.com/danielasakpa/Exercies-App",
-        techs: ["React", "MUI", "API"]
+        techs: ["React", "MUI", "API", "React Router", "JavaScript",],
     },
     {
-        imageUrl: require('../assets/images/Crypto.png'),
+        imageUrl: require("../assets/images/Crypto.png"),
         id: "1288233rd189tutfgerfgf12e12",
         projectNum: "Crypto Website",
         description: `Crypto Website is a platform for users to learn about and keep track of their favourite cryptocurrencies. 
@@ -88,27 +120,24 @@ export const projectItem = [
         I am proud to have contributed to the success of the Crypto Website and look forward to continuing to work on the project in the future.`,
         liveSite: "https://cryptocatalogue.vercel.app/",
         github: "https://github.com/Suman373/CryptoCatalogue",
-        techs: ["React", "MUI", "API"]
+        techs: ["React", "MUI", "API", "React Router", "JavaScript",],
     },
     {
-        imageUrl: require('../assets/images/Jesus-Embassy.png'),
+        imageUrl: require("../assets/images/Jesus-Embassy.png"),
         id: "1288opjihg3e21nhfd8912e12",
         projectNum: "Food Website",
         description: `Introducing the Food Website – your go-to destination for a delightful culinary experience! This platform combines the convenience of online food ordering with a sleek and user-friendly interface. Browse through a variety of delectable options, place your order hassle-free, and track its journey to your doorstep. Powered by React JS, MUI, Framer Motion, Node.js, Express.js, and MongoDB, this project ensures a seamless and enjoyable dining adventure. Satisfy your cravings now at Live Site or explore the code on GitHub.`,
         liveSite: "https://foodapp-w2.netlify.app/",
         github: "https://github.com/danielasakpa/FoodApp-Client",
-        techs: ["React JS", "MUI", "Framer Motion", "Node js", "Express js", "MongoDB"]
+        techs: [
+            "React JS",
+            "MUI",
+            "Framer Motion",
+            "Node js",
+            "Express js",
+            "MongoDB",
+            "React Router",
+            "JavaScript",
+        ],
     },
-    // {
-    //     imageUrl: require('../assets/images/crypto.png'),
-    //     id: "1288213e218912e12",
-    //     projectNum: "Blog App",
-    //     description : `The purpose of this project is to create a personal blog website where I can share my thoughts and experiences with a wider audience. The website will feature a clean and modern design, with easy navigation for users to find and read my blog posts.
-    //     The website will be built using React js for the front end, and ASP .NET WEP API for the back end. It will have a responsive design, meaning it will be optimized for viewing on a variety of devices including desktop computers, tablets, and smartphones.
-    //     In addition to reading my blog posts, users will also have the ability to leave comments and interact with me through a contact form. There will also be a search function to help users find specific posts or topics.
-    //     Overall, this project aims to create a platform for me to share my writing with a wider audience, and to engage with readers through comments and feedback.`,
-    //     liveSite: "https://vast-coast-06462.herokuapp.com/",
-    //     github: "https://github.com/danielasakpa/blog-website",
-    //     techs: ["React", "Tailwind", ".NET Web API", "Sql Server", "Entity Framework"]
-    // }
-]
+];

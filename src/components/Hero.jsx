@@ -61,7 +61,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center px-6 mt-16 text-text md:flex-row lg:mx-auto xl:w-5/6 lg:px-[5%] xl:px-0">
+    <div className="flex flex-col items-center px-6 mt-16 text-text md:flex-row lg:mx-auto xl:w-5/6 md:px-[5%] xl:px-0">
       <motion.div
         className="lg:pr-4 basis-2/2"
         variants={headingVariants}

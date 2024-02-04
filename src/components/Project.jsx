@@ -47,7 +47,7 @@ function Project({ item, isOpen, setIsOpen }) {
         <img
           src={item.imageUrl}
           alt=""
-          className="w-[450px] h-[220px] md:h-[300px] lg:h-[260px] bg-contain rounded-lg z-10"
+          className="w-[450px] h-[220px] md:h-[250px] lg:h-[260px] bg-contain rounded-lg z-10"
         />
         <div
           onClick={() => setIsOpen({ state: !isOpen.state, item: item })}
@@ -70,12 +70,14 @@ function Project({ item, isOpen, setIsOpen }) {
             ))}
           </div>
         </div>
-        <Link
-          to=""
+        <a
+          href={item.liveSite}
+          rel="noopener noreferrer"
+          target="_blank"
           className="flex justify-center items-center bg-button1 w-14 h-14 rounded-full border border-opacity-[20%] border-accent hover:opacity-[50%]"
         >
           <VscLinkExternal className="" size="16px" />
-        </Link>
+        </a>
       </div>
     </m.div>
   );

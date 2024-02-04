@@ -10,7 +10,7 @@ function Contact() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    amount: 0.2,
+    amount: 0.1,
     once: true,
   });
 
@@ -29,12 +29,12 @@ function Contact() {
         <m.div
           initial={{ opacity: 0, y: 70 }}
           whileInView={isInView && { opacity: 1, y: 0 }}
-          transition={{ ease: easing, duration: 0.6, delay: 0.2 }}
+          transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
           className="mt-10"
         >
           <div>
-            <span className="inline-block font-text-[18px] text-accent mb-2 font-extralight opacity-60">
+            <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
               WRITE AN E-MAIL
             </span>
             <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
@@ -42,7 +42,7 @@ function Contact() {
             </p>
           </div>
           <div className="mt-6">
-            <span className="inline-block font-text-[18px] text-accent mb-2 font-extralight opacity-60">
+            <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
               SEND A MESSAGE
             </span>
             <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
@@ -78,7 +78,7 @@ function Contact() {
         <m.div
           initial={{ opacity: 0, x: 70 }}
           whileInView={isInView && { opacity: 1, x: 0 }}
-          transition={{ ease: easing, duration: 0.6, delay: 0.2 }}
+          transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
           className="w-full px-2 lg:basis-2/3"
         >
@@ -99,12 +99,12 @@ function Contact() {
         <m.div
           initial={{ opacity: 0, y: 70 }}
           whileInView={isInView && { opacity: 1, y: 0 }}
-          transition={{ ease: easing, duration: 0.6, delay: 0.2 }}
+          transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
           className="w-full px-2 mt-10 lg:hidden"
         >
           <div>
-            <span className="inline-block font-text-[18px] text-accent mb-2 font-extralight opacity-60">
+            <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
               WRITE AN E-MAIL
             </span>
             <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
@@ -112,7 +112,7 @@ function Contact() {
             </p>
           </div>
           <div className="mt-6">
-            <span className="inline-block font-text-[18px] text-accent mb-2 font-extralight opacity-60">
+            <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
               SEND A MESSAGE
             </span>
             <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">

@@ -61,7 +61,7 @@ const Nav = () => {
   return (
     <>
       <nav className="sticky top-0 z-50 py-3 px-4 lg:px-0 border-b border-opacity-[20%] border-accent font-Poppins bg-background">
-        <div className="flex items-center justify-between mx-auto xl:w-5/6 text-text lg:px-[5%] xl:px-0">
+        <div className="flex items-center justify-between mx-auto xl:w-5/6 text-text md:px-[5%] xl:px-0">
           <a className="flex items-center mr-20 space-x-4" href="/">
             <img src={logo} alt="" className="w-10 h-10 rounded-full" />
             <span className="text-[16px] leading-[36px] m-0 p-0 font-bold">

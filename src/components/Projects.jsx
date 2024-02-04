@@ -32,7 +32,7 @@ function Projects() {
     <>
       <div
         id="work"
-        className="px-6 py-20 mx-auto mt-5 xl:w-5/6 text-text  lg:px-[5%] xl:px-0"
+        className="px-6 py-20 mx-auto mt-5 xl:w-5/6 text-text  md:px-[5%] xl:px-0"
       >
         <span className="block text-[30px] lg:text-[35px] hover-grow-animation">
           My Work

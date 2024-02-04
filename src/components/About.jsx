@@ -7,7 +7,7 @@ function About() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    amount: 0.3,
+    amount: 0.1,
     once: true,
   });
 
@@ -61,7 +61,7 @@ function About() {
       ref={ref}
       animate={isInView ? "visible" : "hidden"}
       id="about"
-      className="flex flex-col lg:flex-row justify-center lg:justify-between mx-auto xl:w-5/6 mt-40 mb-20 relative px-6 lg:px-0  lg:pb-[190px] relative lg:px-[5%] xl:px-0"
+      className="flex flex-col lg:flex-row justify-center lg:justify-between mx-auto xl:w-5/6 mt-40 mb-20 relative px-6 lg:px-0  lg:pb-[190px] relative md:px-[5%] xl:px-0"
     >
       <div
         initial="hidden"
@@ -71,7 +71,7 @@ function About() {
         <m.div
           initial={{ opacity: 0, x: -70 }}
           whileInView={isInView && { opacity: 1, x: 0 }}
-          transition={{ ease: easing, duration: 0.9, delay: 0.2 }}
+          transition={{ ease: easing, duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
           style={{ position: "relative" }}
         >

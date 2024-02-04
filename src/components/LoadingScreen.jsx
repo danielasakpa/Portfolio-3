@@ -64,7 +64,7 @@ const LoadingScreen = () => {
             className={`div${index + 1} flex justify-center items-center`}
             style={{ backgroundColor: item.color }}
             variants={childVariants}
-            transition={{ ease: easing, duration: 0.6 }}
+            transition={{ ease: easing, duration: 0.5 }}
           >
             {item.icon}
           </motion.div>
