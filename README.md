@@ -29,8 +29,8 @@ Welcome to the repository for my personal portfolio website! This project serves
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
+   git clone https://github.com/danielasakpa/Portfolio-3
+   cd Portfolio-3
    ```
 
 2. Install dependencies:
