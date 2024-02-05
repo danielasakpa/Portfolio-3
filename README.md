@@ -2,6 +2,13 @@
 
 Welcome to the repository for my personal portfolio website! This project serves as an online showcase of my skills, projects, and experiences as a developer.
 
+## Screenshots
+<br/>
+
+<p align="center">
+  <img src="https://i.ibb.co/PmQ3Jgk/portfolio-3.png" alt="Alt Text">
+</p>
+
 ## Table of Contents
 - [Features](#features)
 - [Getting Started](#getting-started)
