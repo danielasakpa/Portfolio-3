@@ -1,5 +1,10 @@
 # My Portfolio
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![React](https://img.shields.io/badge/React-Latest-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Latest-blue)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Latest-brightgreen)
+
 Welcome to the repository for my personal portfolio website! This project serves as an online showcase of my skills, projects, and experiences as a developer.
 
 ## Screenshots
