@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 import sendEmail from "../utils/email";
 import { BallTriangle } from "react-loader-spinner";
@@ -10,6 +10,8 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
+
+  const form = useRef();
 
   const [emailSent, setEmailSent] = useState("");
 
@@ -38,9 +40,10 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    console.log("form.current:", form.current);
     console.log("Form data:", formData);
 
-    sendEmail(formData, setEmailSent);
+    sendEmail(form, setEmailSent);
 
     setFormData({
       name: "",
@@ -52,7 +55,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div>
             <label htmlFor="name" className="block text-[16px] text-text mb-1">

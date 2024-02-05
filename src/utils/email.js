@@ -1,16 +1,16 @@
 import emailjs from "@emailjs/browser";
 
 
-const sendEmail = (formData, setEmailSent) => {
+const sendEmail = (form, setEmailSent) => {
 
     setEmailSent("loading");
 
     emailjs
         .sendForm(
-            "service_k9th3hd",
+            "service_8fl2429",
             "contact_form",
-            formData,
-            process.env.REACT_EMAIL_API_KEY
+            form.current,
+            "YxU9ucgaEXCDwBI0X"
         )
         .then(
             (result) => {
