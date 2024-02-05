@@ -7,7 +7,6 @@ function About() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    amount: 0.1,
     once: true,
   });
 
@@ -61,7 +60,7 @@ function About() {
       ref={ref}
       animate={isInView ? "visible" : "hidden"}
       id="about"
-      className="flex flex-col lg:flex-row justify-center lg:justify-between mx-auto xl:w-5/6 mt-40 mb-20 relative px-6 lg:px-0  lg:pb-[190px] relative md:px-[5%] xl:px-0"
+      className="flex flex-col lg:flex-row justify-center lg:justify-between mx-auto xl:w-5/6 mt-32 md:mt-40 mb-20 relative px-6 lg:pb-[190px] relative md:px-[5%] xl:px-0"
     >
       <div
         initial="hidden"
@@ -105,17 +104,20 @@ function About() {
         >
           <m.span
             variants={fadeInFromBottom}
-            className="block text-[35px] hover-grow-animation"
+            className="block text-[35px] hover-grow-animation cursor-pointer"
           >
             About Me
           </m.span>
           <m.h2
             variants={fadeInFromBottom}
-            className="text-[35px] lg:text-[40px] linearPrimaryAccent font-bold mt-4"
+            className="text-[30px] md:text-[40px] leading-[40px] md:leading-[45px] linearPrimaryAccent font-bold mt-4"
           >
             I BRING YOUR DESIGN VISION TO LIFE THROUGH CODE{" "}
           </m.h2>
-          <m.p variants={fadeInFromBottom} className="mt-4">
+          <m.p
+            variants={fadeInFromBottom}
+            className="mt-4 text-[17px] md:text-[20px]"
+          >
             The standard chunk of Lorem Ipsum used since the 1500s is reproduced
             below for those interested. Sections 1.10.32 and 1.10.33 from de
             Finibus Bonorum et Malorum by Cicero are also reproduced in their
@@ -123,28 +125,28 @@ function About() {
             translation by H. Rackham.
           </m.p>
           <m.div
-            className="flex gap-3 text-[14px] mt-10"
+            className="grid grid-cols-3 gap-2 md:gap-3 text-[12px] md:text-[14px] mt-10"
             variants={parentVariants}
             whileInView={isInView && "visible"}
             viewport={{ once: true }}
             initial="hidden"
           >
             <m.div
-              className="flex flex-col justify-center items-start p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
+              className="flex flex-col justify-center basis-1/2 items-start p-2 md:p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
               variants={staggerChildrenVariants}
             >
               <p className="">10+</p>
               <p className="">Projects Completed</p>
             </m.div>
             <m.div
-              className="flex flex-col justify-center items-start p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
+              className="flex flex-col justify-center basis-1/2 items-start p-2 md:p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
               variants={staggerChildrenVariants}
             >
               <p className="">2+</p>
               <p className="">Years Experience</p>
             </m.div>
             <m.div
-              className="flex flex-col justify-center items-start p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
+              className="flex flex-col justify-center items-start p-2 md:p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
               variants={staggerChildrenVariants}
             >
               <p className="">Continuous</p>

@@ -5,7 +5,7 @@ import { motion as m, useInView } from "framer-motion";
 
 function Project({ item, isOpen, setIsOpen }) {
   const isMobile = window.innerWidth <= 768;
-  const istab = window.innerWidth <= 1024;
+  const istab = window.innerWidth <= 1022;
 
   const ref = useRef(null);
 
@@ -14,7 +14,7 @@ function Project({ item, isOpen, setIsOpen }) {
     once: true,
   });
 
-  let tagNum = istab ? 2 : 3;
+  let tagNum = isMobile ? 2 : 3;
 
   const easing = [0.42, 0, 0.58, 1];
 
@@ -38,15 +38,15 @@ function Project({ item, isOpen, setIsOpen }) {
     <m.div
       variants={staggerChildrenVariants}
       ref={ref}
-      initial={isMobile && "hidden"}
-      animate={isInView && isMobile && "visible"}
+      initial={istab && "hidden"}
+      animate={isInView && istab && "visible"}
       className="px-2 pt-2 pb-8 bg-[#7142AB] text-text rounded-lg h-[max-content] max-w-[350px] md:max-w-[700px] lg:w-[450px]"
     >
       <div className="relative rounded-lg group">
         <img
           src={item.imageUrl}
           alt=""
-          className="w-[450px] h-[220px] md:h-[250px] lg:h-[260px] bg-contain rounded-lg z-10"
+          className="w-[450px] h-[180px] md:h-[250px] lg:h-[260px] bg-contain rounded-lg z-10"
         />
         <div
           onClick={() => setIsOpen({ state: !isOpen.state, item: item })}
@@ -58,7 +58,7 @@ function Project({ item, isOpen, setIsOpen }) {
       <div className="flex items-center justify-between px-2 mt-12">
         <div>
           <h4 className="text-[20px]">{item.projectNum}</h4>
-          <div className="flex text-[14px] lg:text-[16px] items-center gap-3 mt-4">
+          <div className="flex flex-wrap text-[12px] md:text-[14px] lg:text-[16px] items-center gap-3 mt-4">
             {item.techs.slice(0, tagNum).map((tech, index) => (
               <div
                 key={index}

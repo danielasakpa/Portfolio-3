@@ -22,7 +22,7 @@ export const projectItem = [
         id: "1288213e2189tudvfdvtrwrgrgf12e12",
         projectNum: "My New portfolio",
         description: `Explore my digital realm—a dynamic portfolio showcasing the fusion of creativity and technology. Crafted with React.js for seamless interactivity and visually enhanced with Tailwind CSS for a modern aesthetic. Dive into a journey of captivating design, responsive layouts, and innovative animations. My portfolio is a testament to my passion for creating immersive digital experiences, underlined by a commitment to continuous learning and pushing the boundaries of web development`,
-        liveSite: "https://danielasakpa.netlify.app/",
+        liveSite: "https://daniel-asakpa-portfolio.netlify.app/",
         github: "https://github.com/danielasakpa/Portfolio-3",
         techs: [
             "React.js",

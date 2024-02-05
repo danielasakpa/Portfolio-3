@@ -10,7 +10,6 @@ function Contact() {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    amount: 0.1,
     once: true,
   });
 
@@ -80,20 +79,20 @@ function Contact() {
           whileInView={isInView && { opacity: 1, x: 0 }}
           transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="w-full px-2 lg:basis-2/3"
+          className="w-full lg:basis-2/3"
         >
-          <h2 className="block text-[35px] hover-grow-animation">
+          <h2 className="block text-[35px] leading-[45px] hover-grow-animation cursor-pointer">
             Let’s Discuss Your Project
           </h2>
           <p className="mt-4 text-[17px]">
-            Always available for freelancing if the right project comes along,
-            Feel free to contact me.
+            Always available if the right Project/Job comes along, Feel free to
+            contact me.
           </p>
         </m.div>
       </div>
       <div className="flex flex-col items-center justify-center px-4 py-12 lg:flex-row ">
         <div className="hidden basis-1/2 lg:block"></div>
-        <div className="w-full px-2 lg:basis-2/3">
+        <div className="w-full lg:basis-2/3">
           <ContactForm />
         </div>
         <m.div
@@ -101,21 +100,21 @@ function Contact() {
           whileInView={isInView && { opacity: 1, y: 0 }}
           transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
-          className="w-full px-2 mt-10 lg:hidden"
+          className="w-full mt-10 lg:hidden"
         >
           <div>
-            <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
+            <span className="inline-block text-[12px] md:text-[14px] text-accent mb-2 font-extralight opacity-60">
               WRITE AN E-MAIL
             </span>
-            <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
+            <p className="text-[17px] md:text-[20px] font-semibold cursor-pointer hover:opacity-60">
               danielasakpa@gmail.com
             </p>
           </div>
           <div className="mt-6">
-            <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
+            <span className="inline-block text-[12px] md:text-[14px] text-accent mb-2 font-extralight opacity-60">
               SEND A MESSAGE
             </span>
-            <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
+            <p className="text-[17px] md:text-[20px] font-semibold cursor-pointer hover:opacity-60">
               +2349022434392
             </p>
           </div>

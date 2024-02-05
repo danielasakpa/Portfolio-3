@@ -32,12 +32,12 @@ function Projects() {
     <>
       <div
         id="work"
-        className="px-6 py-20 mx-auto mt-5 xl:w-5/6 text-text  md:px-[5%] xl:px-0"
+        className="px-6 py-10 md:py-20 mx-auto mt-5 xl:w-5/6 text-text  md:px-[5%] xl:px-0"
       >
-        <span className="block text-[30px] lg:text-[35px] hover-grow-animation">
+        <span className="block text-[30px] lg:text-[35px] hover-grow-animation cursor-pointer">
           My Work
         </span>
-        <h2 className="text-[35px] lg:text-[40px] linearPrimaryAccent font-bold mt-4">
+        <h2 className="text-[28px] md:text-[40px] leading-[35px]  md:leading-[45px] linearPrimaryAccent font-bold mt-4">
           RECENT PROJECT
         </h2>
         <section ref={targetRef} className="relative h-[200vh] hidden lg:block">

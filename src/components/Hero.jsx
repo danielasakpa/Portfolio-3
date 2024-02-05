@@ -33,11 +33,14 @@ const Hero = () => {
   const easing = [0.42, 0, 0.58, 1];
 
   const iconColors = [
-    { color: "#6F2CA7", icon: <FaCss3Alt size={20} color="#fff" /> },
-    { color: "#85c0c1", icon: <FaHtml5 size={20} color="#fff" /> },
-    { color: "#85c0c1", icon: <FaNode size={70} color="#fff" /> },
     {
-      color: "#6962ac",
+      color: "bg-button1 opacity-50",
+      icon: <FaCss3Alt size={20} color="#fff" />,
+    },
+    { color: "bg-[#85c0c1]", icon: <FaHtml5 size={20} color="#fff" /> },
+    { color: "bg-[#85c0c1]", icon: <FaNode size={70} color="#fff" /> },
+    {
+      color: "bg-[#6962ac]",
       icon: (
         <motion.div
           initial={{ rotate: 0 }}
@@ -48,22 +51,34 @@ const Hero = () => {
         </motion.div>
       ),
     },
-    { color: "#6F2CA7", icon: <FaGithub size={20} color="#fff" /> },
-    { color: "#6F2CA7", icon: <SiTailwindcss size={20} color="#fff" /> },
-    { color: "#6F2CA7", icon: <SiRedux size={20} color="#fff" /> },
-    { color: "#ededf2", icon: <SiFirebase size={40} color="#6962ac" /> },
-    { color: "#96e9c6", icon: null },
-    { color: "#6F2CA7", icon: null },
-    { color: "#6F2CA7", icon: null },
-    { color: "#96e9c6", icon: <IoLogoJavascript size={40} color="#fff" /> },
-    { color: "#6F2CA7", icon: null },
-    { color: "#85c0c1", icon: null },
+    {
+      color: "bg-button1 opacity-50",
+      icon: <FaGithub size={20} color="#fff" />,
+    },
+    {
+      color: "bg-button1 opacity-50",
+      icon: <SiTailwindcss size={20} color="#fff" />,
+    },
+    {
+      color: "bg-button1 opacity-50",
+      icon: <SiRedux size={20} color="#fff" />,
+    },
+    { color: "bg-[#ededf2]", icon: <SiFirebase size={40} color="#6962ac" /> },
+    { color: "bg-[#96e9c6]", icon: null },
+    { color: "bg-button1 opacity-50", icon: null },
+    { color: "bg-button1 opacity-50", icon: null },
+    {
+      color: "bg-[#96e9c6]",
+      icon: <IoLogoJavascript size={40} color="#fff" />,
+    },
+    { color: "bg-button1 opacity-50", icon: null },
+    { color: "bg-[#85c0c1]", icon: null },
   ];
 
   return (
-    <div className="flex flex-col items-center px-6 mt-16 text-text md:flex-row lg:mx-auto xl:w-5/6 md:px-[5%] xl:px-0">
+    <div className="flex items-center px-6 mt-16 text-text md:flex-row lg:mx-auto xl:w-5/6 md:px-[5%] xl:px-0">
       <motion.div
-        className="lg:pr-4 basis-2/2"
+        className="lg:pr-4 lg:basis-2/2"
         variants={headingVariants}
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -89,7 +104,7 @@ const Hero = () => {
         </a>{" "}
         <ScrollLink
           to={"about"}
-          className="flex items-center mt-10 cursor-pointer"
+          className="flex items-start mt-10 cursor-pointer"
           spy={true}
           smooth={true}
           offset={-70}
@@ -109,8 +124,9 @@ const Hero = () => {
           {iconColors.map((item, index) => (
             <motion.div
               key={index}
-              className={`div${index + 1} flex justify-center items-center`}
-              style={{ backgroundColor: item.color }}
+              className={`div${index + 1} flex justify-center items-center ${
+                item.color
+              }`}
               variants={childVariants}
               transition={{ ease: easing, duration: 0.8 }}
             >

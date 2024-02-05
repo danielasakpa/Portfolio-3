@@ -41,12 +41,14 @@ const CardModal = ({ isOpen, setIsOpen }) => {
               <img
                 src={isOpen.item.imageUrl}
                 alt=""
-                className="w-[850px] h-[220px] lg:h-[max-content] bg-contain rounded-lg z-10"
+                className="w-[850px] h-[max-content] bg-contain rounded-lg z-10"
               />
               <h2 className="text-[25px] hover-grow-animation mt-4">
                 {isOpen.item.projectNum}
               </h2>
-              <p className="mt-2">{isOpen.item.description}</p>
+              <p className="mt-2 text-[17px] md:text-[20px]">
+                {isOpen.item.description}
+              </p>
               <div className="flex flex-wrap items-center gap-3 mt-6">
                 {isOpen.item.techs.map((tech, index) => (
                   <div

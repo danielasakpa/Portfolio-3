@@ -80,7 +80,6 @@ const Skills = () => {
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    amount: 0.1,
     once: true,
   });
 
@@ -110,10 +109,10 @@ const Skills = () => {
         transition={{ ease: easing, duration: 0.6, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        <span className="block text-[35px] hover-grow-animation">
+        <span className="block text-[35px] hover-grow-animation cursor-pointer">
           My Skills
         </span>
-        <p className="mt-4 text-[20px]">
+        <p className="mt-4 text-[17px] md:text-[20px]">
           I have extensive experience working with a variety of technologies as
           a developer. I've developed and maintained multiple projects using
           these technologies, and I'm always eager to learn more.
