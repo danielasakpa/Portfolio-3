@@ -39,18 +39,37 @@ Welcome to the repository for my personal portfolio website! This project serves
    ```
 
 ## Usage
-1. Customize your portfolio:
+### Customize your portfolio:
    - Update personal information in `src/components/About.jsx`.
    - Add your projects in `src/assets/projectItem.js`.
    - Edit your skills in `src/components/Skills.jsx`.
    - Adjust the content of other sections in the corresponding files.
+  
+### Setting Up Email.js
+To enable the contact form functionality, you'll need to set up your Email.js public API key. Follow these steps:
 
-2. Run the development server:
+1. Get Your Email.js Public API Key:
+   - Visit the [Email.js website](https://www.emailjs.com/).
+   - Sign in to your account or create a new one.
+   - Once logged in, go to your [Email.js dashboard](https://dashboard.emailjs.com/) and select your email service.
+   - Navigate to the "Integration" section to find your public API key.
+
+2. Add Your API Key to the Project:
+   - Create a new file named `.env` in the root directory of your project.
+   - Inside the `.env` file, add the following line:
+     ```
+     REACT_EMAIL_API_KEY=your-email-js-public-api-key
+     ```
+     Replace `your-email-js-public-api-key` with the actual public API key you obtained from Email.js.
+
+For more detailed instructions on getting your Email.js public API key and using it with the portfolio contact form, refer to the [Email.js documentation](https://www.emailjs.com/docs/).
+
+### Run the development server:
    ```bash
    npm start
    ```
 
-3. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view your portfolio.
+ Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view your portfolio.
 
 ## Contributing
 If you're interested in contributing to this project, follow these steps:
