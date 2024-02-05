@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![React](https://img.shields.io/badge/React-Latest-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Latest-blueviolet)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Latest-blue)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Latest-brightgreen)
 
