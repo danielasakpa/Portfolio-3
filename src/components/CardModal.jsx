@@ -41,7 +41,7 @@ const CardModal = ({ isOpen, setIsOpen }) => {
               <img
                 src={isOpen.item.imageUrl}
                 alt=""
-                className="w-[850px] h-[max-content] bg-contain rounded-lg z-10"
+                className="w-[850px] min-h-[180px] sm:h-[max-content] bg-contain rounded-lg z-10"
               />
               <h2 className="text-[25px] hover-grow-animation mt-4">
                 {isOpen.item.projectNum}
