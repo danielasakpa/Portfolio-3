@@ -5,7 +5,7 @@ import { SiRedux, SiFirebase, SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { VscLinkExternal } from "react-icons/vsc";
 import { BsMouse } from "react-icons/bs";
-import Resume from "../assets/MyResume.pdf";
+import Resume from "../assets/Daniel-Asakpa.pdf";
 import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
