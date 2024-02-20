@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import naomi from "../assets/images/naomi.jpg";
+import naomi from "../assets/images/Daniel.jpg";
 import effect1 from "../assets/images/effect-1.svg";
 import { motion as m, useInView } from "framer-motion";
 
@@ -118,11 +118,11 @@ function About() {
             variants={fadeInFromBottom}
             className="mt-4 text-[17px] md:text-[20px]"
           >
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-            below for those interested. Sections 1.10.32 and 1.10.33 from de
-            Finibus Bonorum et Malorum by Cicero are also reproduced in their
-            exact original form, accompanied by English versions from the 1914
-            translation by H. Rackham.
+            Passionate web developer crafting unique and innovative digital
+            experiences. I blend creativity with technical expertise to deliver
+            visually appealing and functional websites. Constantly exploring new
+            technologies and methodologies to stay at the forefront of web
+            development. Let's build something amazing together!
           </m.p>
           <m.div
             className="grid grid-cols-3 gap-2 md:gap-3 text-[12px] md:text-[14px] mt-10"

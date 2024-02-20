@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import ContactForm from "./ContactForm";
-import contactImg from "../assets/images/contact2.jpg";
+import contactImg from "../assets/images/daniel2.jpg";
 import { SocialIcon } from "react-social-icons";
 import { motion as m, useInView } from "framer-motion";
 
@@ -23,7 +23,7 @@ function Contact() {
         <img
           src={contactImg}
           alt="Discuss Your Project"
-          className="bg-contain rounded-lg w-[320px] h-[300px] border border-opacity-[20%] border-accent"
+          className="bg-cover rounded-lg w-[320px] h-[300px] border border-opacity-[20%] border-accent"
         />
         <m.div
           initial={{ opacity: 0, y: 70 }}
