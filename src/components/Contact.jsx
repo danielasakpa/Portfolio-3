@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import ContactForm from "./ContactForm";
-import contactImg from "../assets/images/daniel2.jpg";
 import { SocialIcon } from "react-social-icons";
 import { motion as m, useInView } from "framer-motion";
+import daniel5Img from "../assets/images/daniel5.jpg";
 
 function Contact() {
   const easing = [0.42, 0, 0.58, 1];
@@ -17,13 +17,13 @@ function Contact() {
     <div
       ref={ref}
       id="contact"
-      className="mt-20 lg:mt-40 w-[95%] mx-auto xl:w-5/6 text-text relative rounded-lg border border-opacity-[20%] border-accent relative  "
+      className="mt-20 lg:mt-40 w-[95%] mx-auto xl:w-5/6 text-text relative rounded-lg border border-opacity-[20%] border-accent"
     >
       <div className="absolute top-[50px] left-[70px] hidden lg:block">
         <img
-          src={contactImg}
+          src={daniel5Img}
           alt="Discuss Your Project"
-          className="bg-cover rounded-lg w-[320px] h-[300px] border border-opacity-[20%] border-accent"
+          className="bg-contain rounded-lg w-[320px] h-[300px] border border-opacity-[20%] border-accent"
         />
         <m.div
           initial={{ opacity: 0, y: 70 }}
