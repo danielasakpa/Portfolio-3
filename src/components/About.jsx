@@ -81,7 +81,7 @@ function About() {
               alt="daniel asakpa"
               className="w-[350px] md:max-w-[456px] max-h-[500px] md:max-h-[558px] rounded-md border border-opacity-[20%] border-accent z-10"
             />
-            <div className="absolute w-[350px] md:w-full h-full rounded-md bg-black top-0 left-0 z-20 opacity-15" />
+            <div className="absolute top-0 left-0 z-20 w-full h-full bg-black rounded-md opacity-15" />
           </div>
           <m.img
             src={effect1}
