@@ -114,7 +114,7 @@ const Hero = () => {
           <span className="text-[12px]"> Scroll to see more sections</span>
         </ScrollLink>
       </motion.div>
-      <div className="flex items-center justify-center hidden basis-1/2 lg:block">
+      <div className="items-center justify-center hidden basis-1/2 lg:flex">
         <motion.div
           className="mx-auto parent"
           initial="hidden"
