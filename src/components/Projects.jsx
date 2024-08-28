@@ -64,7 +64,7 @@ function Projects() {
           initial="hidden"
           className="grid grid-cols-1 mt-10 sm:grid-cols-2 justify-items-center gap-x-4 gap-y-6 lg:hidden"
         >
-          {projectItem.slice(0, 5).map((item, i) => (
+          {projectItem.map((item, i) => (
             <Project
               key={i}
               item={item}
