@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import naomi from "../assets/images/Daniel.jpg";
+import aboutImg from "../assets/images/Daniel.jpg";
 import effect1 from "../assets/images/effect-1.svg";
 import { motion as m, useInView } from "framer-motion";
 
@@ -74,11 +74,15 @@ function About() {
           viewport={{ once: true }}
           style={{ position: "relative" }}
         >
-          <img
-            src={naomi}
-            alt=""
-            className="w-[350px] md:max-w-[456px] max-h-[500px] md:max-h-[558px] rounded-md border border-opacity-[20%] border-accent z-10"
-          />
+          <div className="relative">
+            {" "}
+            <img
+              src={aboutImg}
+              alt="daniel asakpa"
+              className="w-[350px] md:max-w-[456px] max-h-[500px] md:max-h-[558px] rounded-md border border-opacity-[20%] border-accent z-10"
+            />
+            <div className="absolute w-[350px] md:w-full h-full rounded-md bg-black top-0 left-0 z-20 opacity-15" />
+          </div>
           <m.img
             src={effect1}
             alt=""
