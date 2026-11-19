@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import ContactForm from "./ContactForm";
 import contactImg from "../assets/images/daniel4.jpg";
-import { SocialIcon } from "react-social-icons";
 import { motion as m, useInView } from "framer-motion";
 
 function Contact() {
@@ -36,40 +35,19 @@ function Contact() {
             <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
               WRITE AN E-MAIL
             </span>
-            <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
+            <a href="mailto:danielasakpa@gmail.com" className="text-[20px] font-semibold hover:opacity-60">
               danielasakpa@gmail.com
-            </p>
+            </a>
           </div>
           <div className="mt-6">
             <span className="inline-block text-[14px] text-accent mb-2 font-extralight opacity-60">
               SEND A MESSAGE
             </span>
-            <p className="text-[20px] font-semibold cursor-pointer hover:opacity-60">
+            <a href="tel:+2349022434392" className="text-[20px] font-semibold hover:opacity-60">
               +2349022434392
-            </p>
+            </a>
           </div>
-          <div className="flex gap-3 mt-8">
-            <SocialIcon
-              url="https://twitter.com"
-              network="linkedin"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-            <SocialIcon
-              url="https://twitter.com"
-              network="facebook"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-            <SocialIcon
-              url="https://twitter.com"
-              network="instagram"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-            <SocialIcon
-              url="https://twitter.com"
-              network="twitter"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-          </div>
+          <a href="https://github.com/danielasakpa" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 underline underline-offset-4 hover:opacity-60">GitHub profile</a>
         </m.div>
       </div>
       <div className=" flex items-center justify-center py-10 border-b border-opacity-[20%] border-accent px-4 ">
@@ -85,8 +63,7 @@ function Contact() {
             Let’s Discuss Your Project
           </h2>
           <p className="mt-4 text-[17px]">
-            Always available if the right Project/Job comes along, Feel free to
-            contact me.
+            I’m open to full-stack developer opportunities and thoughtful collaborations. Get in touch to discuss a role or project.
           </p>
         </m.div>
       </div>
@@ -106,40 +83,19 @@ function Contact() {
             <span className="inline-block text-[12px] md:text-[14px] text-accent mb-2 font-extralight opacity-60">
               WRITE AN E-MAIL
             </span>
-            <p className="text-[17px] md:text-[20px] font-semibold cursor-pointer hover:opacity-60">
+            <a href="mailto:danielasakpa@gmail.com" className="text-[17px] md:text-[20px] font-semibold hover:opacity-60">
               danielasakpa@gmail.com
-            </p>
+            </a>
           </div>
           <div className="mt-6">
             <span className="inline-block text-[12px] md:text-[14px] text-accent mb-2 font-extralight opacity-60">
               SEND A MESSAGE
             </span>
-            <p className="text-[17px] md:text-[20px] font-semibold cursor-pointer hover:opacity-60">
+            <a href="tel:+2349022434392" className="text-[17px] md:text-[20px] font-semibold hover:opacity-60">
               +2349022434392
-            </p>
+            </a>
           </div>
-          <div className="flex gap-3 mt-8">
-            <SocialIcon
-              url="https://twitter.com"
-              network="linkedin"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-            <SocialIcon
-              url="https://twitter.com"
-              network="facebook"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-            <SocialIcon
-              url="https://twitter.com"
-              network="instagram"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-            <SocialIcon
-              url="https://twitter.com"
-              network="twitter"
-              className="border-2 rounded-full border-accent hover:opacity-60"
-            />
-          </div>
+          <a href="https://github.com/danielasakpa" target="_blank" rel="noopener noreferrer" className="inline-block mt-8 underline underline-offset-4 hover:opacity-60">GitHub profile</a>
         </m.div>
       </div>
     </div>

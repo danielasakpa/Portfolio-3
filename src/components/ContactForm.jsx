@@ -40,9 +40,6 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("form.current:", form.current);
-    console.log("Form data:", formData);
-
     sendEmail(form, setEmailSent);
 
     setFormData({
@@ -123,7 +120,7 @@ const ContactForm = () => {
             type="submit"
             className="w-full px-4 py-3 font-medium text-white transition-all bg-indigo-500 rounded hover:bg-indigo-600 active:scale-95"
           >
-            Submit
+            Send message
           </button>
         </div>
       </form>

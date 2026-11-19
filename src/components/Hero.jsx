@@ -88,7 +88,7 @@ const Hero = () => {
           I’m Daniel Asakpa
           <br />
           <span className="inline-block italic text-background italic-span">
-            A Full Stack developer
+            Full-Stack Developer
           </span>{" "}
           <br />
           based in Lagos, Nigeria.
@@ -99,7 +99,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="flex items-center px-10 py-2 mt-10 w-full lg:w-[50%] bg-button1 rounded-md border border-opacity-[20%] border-accent text-[16px] leading-[36px] text hover:opacity-[50%]"
         >
-          Resume
+          View résumé
           <VscLinkExternal className="ml-2" size="12px" />
         </a>{" "}
         <ScrollLink

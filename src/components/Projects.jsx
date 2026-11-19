@@ -38,7 +38,7 @@ function Projects() {
           My Work
         </span>
         <h2 className="text-[28px] md:text-[40px] leading-[35px]  md:leading-[45px] linearPrimaryAccent font-bold mt-4">
-          RECENT PROJECT
+          Selected projects
         </h2>
         <section ref={targetRef} className="relative h-[200vh] hidden lg:block">
           <div className="sticky flex items-center overflow-hidden top-16">
