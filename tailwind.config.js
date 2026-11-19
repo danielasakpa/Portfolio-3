@@ -10,13 +10,13 @@ module.exports = {
         'Bebas': ["Bebas Neue"],
       },
       colors: {
-        'text': '#96e9c6',
-        'background': '#6c22a5',
-        'primary': '#6962ac',
-        'secondary': '#85c0c1',
-        'accent': '#ededf2',
-        'button1': "#7452AD",
-        "linearPrimarySecondary": "linear-gradient(#6962ac, #85c0c1)"
+        'text': '#f4f1f8',
+        'background': '#17131f',
+        'primary': '#9a83f5',
+        'secondary': '#73daca',
+        'accent': '#bcb4ca',
+        'button1': "#252033",
+        "linearPrimarySecondary": "linear-gradient(#9a83f5, #73daca)"
       },
 
     },

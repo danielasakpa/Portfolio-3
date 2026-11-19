@@ -116,17 +116,17 @@ function About() {
             variants={fadeInFromBottom}
             className="text-[30px] md:text-[40px] leading-[40px] md:leading-[45px] linearPrimaryAccent font-bold mt-4"
           >
-            I BRING YOUR DESIGN VISION TO LIFE THROUGH CODE{" "}
+            I build thoughtful web experiences from interface to API.
           </m.h2>
           <m.p
             variants={fadeInFromBottom}
             className="mt-4 text-[17px] md:text-[20px]"
           >
-            Passionate web developer crafting unique and innovative digital
-            experiences. I blend creativity with technical expertise to deliver
-            visually appealing and functional websites. Constantly exploring new
-            technologies and methodologies to stay at the forefront of web
-            development. Let's build something amazing together!
+            I’m a Lagos-based full-stack developer who enjoys turning ideas
+            into reliable, responsive products. I work across React and modern
+            JavaScript interfaces, and build server-side features with Node.js,
+            Express, and MongoDB. I care about clear user experiences,
+            maintainable code, and collaborating closely to ship useful work.
           </m.p>
           <m.div
             className="grid grid-cols-3 gap-2 md:gap-3 text-[12px] md:text-[14px] mt-10"
@@ -139,22 +139,22 @@ function About() {
               className="flex flex-col justify-center basis-1/2 items-start p-2 md:p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
               variants={staggerChildrenVariants}
             >
-              <p className="">10+</p>
+              <p className="">20+</p>
               <p className="">Projects Completed</p>
             </m.div>
             <m.div
               className="flex flex-col justify-center basis-1/2 items-start p-2 md:p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
               variants={staggerChildrenVariants}
             >
-              <p className="">2+</p>
+              <p className="">4+</p>
               <p className="">Years Experience</p>
             </m.div>
             <m.div
               className="flex flex-col justify-center items-start p-2 md:p-3 bg-button1 rounded-md border border-opacity-[20%] border-accent"
               variants={staggerChildrenVariants}
             >
-              <p className="">Continuous</p>
-              <p className="">Learning Advocate</p>
+              <p className="">End to end</p>
+              <p className="">Product mindset</p>
             </m.div>
           </m.div>
         </m.div>

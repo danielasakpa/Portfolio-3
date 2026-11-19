@@ -40,12 +40,12 @@ function Project({ item, isOpen, setIsOpen }) {
       ref={ref}
       initial={istab && "hidden"}
       animate={isInView && istab && "visible"}
-      className="px-2 pt-2 pb-8 bg-[#7142AB] text-text rounded-lg h-[max-content] max-w-[350px] md:max-w-[700px] lg:w-[450px]"
+      className="px-2 pt-2 pb-8 bg-button1 text-text rounded-lg h-[max-content] max-w-[350px] md:max-w-[700px] lg:w-[450px]"
     >
       <div className="relative rounded-lg group">
         <img
           src={item.imageUrl}
-          alt=""
+          alt={`${item.projectNum} project preview`}
           className="w-[450px] h-[180px] md:h-[250px] lg:h-[260px] bg-contain rounded-lg z-10"
         />
         <div

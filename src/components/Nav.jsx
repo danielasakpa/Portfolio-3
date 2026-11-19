@@ -63,7 +63,7 @@ const Nav = () => {
       <nav className="sticky top-0 z-50 py-3 px-4 lg:px-0 border-b border-opacity-[20%] border-accent font-Poppins bg-background">
         <div className="flex items-center justify-between mx-auto xl:w-5/6 text-text md:px-[5%] xl:px-0">
           <a className="flex items-center mr-20 space-x-4" href="/">
-            <img src={logo} alt="" className="w-10 h-10 rounded-full" />
+            <img src={logo} alt="" aria-hidden="true" className="w-10 h-10 rounded-full" />
             <span className="text-[16px] leading-[36px] m-0 p-0 font-bold">
               Daniel Asakpa
             </span>
@@ -89,10 +89,12 @@ const Nav = () => {
               ))}
             </ul>
             <a
-              href="/"
+              href="https://github.com/danielasakpa"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center ml-6 px-8 rounded-md border border-opacity-[20%] border-accent text-[16px] leading-[36px] hover:opacity-[50%]"
             >
-              Blog
+              GitHub
               <VscLinkExternal className="ml-1" size="12px" />
             </a>
           </div>
@@ -175,11 +177,13 @@ const Nav = () => {
                     ))}
                     <li>
                       <a
-                        href="/"
+                        href="https://github.com/danielasakpa"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-[16px] leading-[36px] cursor-pointer"
                         onClick={toggleMenu}
                       >
-                        Blog
+                        GitHub
                       </a>
                     </li>
                   </ul>
